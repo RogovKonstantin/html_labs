@@ -7,17 +7,14 @@
     display: flex;
     flex-direction: column;
     background: rgb(211, 211, 211);
-
-
 }
 
-
-
-main, aside, header,footer {
+    main, aside, header,footer {
     background: white;
     padding: 10px;
     margin: 10px;
 box-shadow: 0 0 5px rgba(0, 0, 0, 10);
+text-align: left;
 }
 main{
 width:70%;
@@ -28,7 +25,26 @@ width:30%;}
 
 .mainaside{
 display: flex;
+height:300px;
+flex-grow: 1;
+             flex-shrink: 1;
+            flex-basis: auto;
 }
+        header {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            height: 80px;
+        }
+
+
+
+        footer {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            height: 40px;
+        }
 
 
     </style>
