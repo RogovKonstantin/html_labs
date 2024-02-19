@@ -4,72 +4,65 @@
     <meta charset="UTF-8">
     <title>Карточки</title>
     <style>
+        body {
+            background: rgb(238, 238, 238);
+        }
+
         ul {
             list-style-type: none;
-        }
-        .bottom, p, h2 {
-        padding-left: 2%;
-        }
-
-       .masonry ul {
             column-count: 3;
         }
+        li{margin-bottom: 20px;}
 
-        .masonry li {
-            border: 1px solid #ccc;
+
+        .card {
+            border: 1px solid black;
             border-radius: 5px;
             margin-bottom: 20px;
-            width: auto;
+            break-inside: avoid;
         }
 
-        .masonry .card {
-              break-inside: avoid;
+        .card img {
+            border-radius: 5px 5px 0 0;
+            width: 100%;
         }
 
-         .masonry img {
-         border-radius: 5px 5px 0 0;
-         width: 100%;
-         }
-         .masonry p {
-         padding-bottom: 30px;
-         }
+        .card header, .card p {
+            padding:10px;
+        }
 
-       .bottom {
-            height: 70px;
-            border-top: 1px solid #ccc;
+        .card .bottom {
+            height: 50px;
+            border-top: 1px solid black;
             display: flex;
             align-items: center;
             text-align: left;
-         }
+            padding:10px;
+        }
+
+        .card p {
+            padding-bottom: 30px;
+            flex: 1;
+        }
+
 
         .flex ul {
-           display: flex;
+            display: flex;
             flex-wrap: wrap;
             justify-content: start;
         }
+
         .flex li {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 20px;
             width: calc(33.33% - 20px);
-            margin-right: 2%;
-       }
+            margin-right: 15px;
+
+        }
+
         .flex .card {
             display: flex;
-            flex-direction: column;
+flex-direction: column;
             height: 100%;
-    }
-        .flex img {
-         border-radius: 5px 5px 0 0;
-         width: 100%;
-         }
-
-         .flex p {
-         padding-bottom: 30px;
-          flex: 1;
-         }
-
-
+        }
     </style>
 </head>
 <body>
@@ -79,7 +72,7 @@
         <li>
             <section class="card">
                 <img src="picture18.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -89,7 +82,7 @@
         <li>
             <section class="card">
                 <img src="picture19.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -99,7 +92,7 @@
         <li>
             <section class="card">
                 <img src="picture20.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -109,7 +102,7 @@
         <li>
             <section class="card">
                 <img src="picture21.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -119,7 +112,7 @@
         <li>
             <section class="card">
                 <img src="picture18.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -129,7 +122,7 @@
         <li>
             <section class="card">
                 <img src="picture19.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -139,7 +132,7 @@
         <li>
             <section class="card">
                 <img src="picture20.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -149,7 +142,7 @@
         <li>
             <section class="card">
                 <img src="picture21.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -164,7 +157,7 @@
         <li>
             <section class="card">
                 <img src="picture18.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -174,7 +167,7 @@
         <li>
             <section class="card">
                 <img src="picture19.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -184,7 +177,7 @@
         <li>
             <section class="card">
                 <img src="picture20.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -194,7 +187,7 @@
         <li>
             <section class="card">
                 <img src="picture21.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -204,7 +197,7 @@
         <li>
             <section class="card">
                 <img src="picture18.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -214,7 +207,7 @@
         <li>
             <section class="card">
                 <img src="picture19.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -224,7 +217,7 @@
         <li>
             <section class="card">
                 <img src="picture20.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
@@ -234,7 +227,7 @@
         <li>
             <section class="card">
                 <img src="picture21.jpg">
-                <h2>Card Title</h2>
+                <header>Card Title</header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur possimus quo enim
                     eveniet, deserunt ducimus doloremque laudantium iure, ut inventore eaque fugit ex porro totam
                     perspiciatis molestiae corporis. Odio!</p>
