@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        header {
+    margin-bottom: -13px;
+    width: 4rem;
+    background-color: white;
+    border: solid grey;
+    border-radius:0.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+form {
+    background-color: (237,237,237);
+    width: 16rem;
+    padding-top: 20px;
+    border: solid grey;
+    border-radius:0.1rem;
+    position: relative;
+    z-index: 0;
+}
+        input[type="submit"] {
+  width: 3rem;
+  background-color: black;
+  box-shadow: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius:0.1rem;
+
+}
+    </style>
+</head>
+<body>
+
+
+<header>Login</header>
+<form>
+    <div>
+        <label for="Username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <input type="submit" value="Login">
+</form>
+
+</body>
+</html>
