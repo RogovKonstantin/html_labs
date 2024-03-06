@@ -9,6 +9,7 @@
             margin: auto;
             width: 90%;
             border-collapse: collapse;
+            font-size:0.5rem;
         }
         tbody tr:nth-child(odd){
             background-color: rgb(240, 240, 240);
@@ -21,30 +22,42 @@
         th, td {
             border: 0.1rem solid grey;
             text-align: left;
-            padding: 0.5rem;
+            padding: 0.2rem;
 
         }
-        @media only screen and (max-width: 600px) {
-            table, tbody, th, td, tr {
-                display: block;
-            }
+        @media only screen and (max-width: 450px) {
+        body{
+            padding-top:2%;
 
-            tbody tr:nth-child(odd){
+        }
+        table {
+            width: 45%;
+            margin:auto;
+        }
+
+        tbody, th, td, tr {
+        display: block;}
+
+            tbody tr:nth-child(odd) td{
                 background-color: rgb(240, 240, 240);
             }
             td {
-                border: 1px solid #ddd;
+
+                border: 1px solid grey;
                 position: relative;
-                padding-left: 35%;
+                padding-left: 2.8rem;
+                object-fit: contain;
             }
             td:before {
                 position: absolute;
                 left: 0.2rem;
                 content: attr(data-label);
                 font-weight: bold;
+                object-fit: contain;
             }
             thead tr {
                 display: none;
+                object-fit: contain;
             }
         }
     </style>
@@ -56,7 +69,6 @@
         <th>First Name</th>
         <th>Last Name</th>
         <th>Job Title</th>
-
     </tr>
     </thead>
     <tbody>
